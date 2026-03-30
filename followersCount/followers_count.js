@@ -14,6 +14,11 @@ function checkCountValue() {
   }
 }
 
+function resetCount() {
+    count = 0; // Сбрасываем значение до 0
+    displayCount(); // Обновляем отображение на странице
+    alert("The followers count has been reset."); // Показываем всплывающее окно
+}
 
 function displayCount() {
 document.getElementById('countDisplay').innerHTML=count; // Отобразить количество в HTML
